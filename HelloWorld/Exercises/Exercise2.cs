@@ -29,7 +29,10 @@ namespace HelloWorld.Exercises
             Console.WriteLine($"Square Area: {square.GetArea()}");
 
             Garage garage = new Garage();
-            garage.AddCars(new List<Car> { car });
+            garage.AddCar(car);
+            garage.AddCar(eCar);
+            garage.Cars[0].DisplayInfo();
+            garage.Cars[1].DisplayInfo();
             Console.WriteLine($"Cars in garage: {garage.Cars.Count}");
         }
     }
