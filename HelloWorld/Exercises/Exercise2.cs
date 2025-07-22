@@ -20,7 +20,17 @@ namespace HelloWorld.Exercises
             // Animal otter = new Animal(); does not work because Animal is abstract
             dog.Speak();
             cat.Speak();
-            cat2.Speak();   
+            cat2.Speak();
+
+            Circle circle = new Circle(5);
+            Square square = new Square(4);
+
+            Console.WriteLine($"Circle Area: {circle.GetArea()}");
+            Console.WriteLine($"Square Area: {square.GetArea()}");
+
+            Garage garage = new Garage();
+            garage.AddCars(new List<Car> { car });
+            Console.WriteLine($"Cars in garage: {garage.Cars.Count}");
         }
     }
 
