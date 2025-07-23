@@ -46,7 +46,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("No such exercise.");
+            Console.WriteLine($"No such exercise: {className}.");
         }
 
         return 0;

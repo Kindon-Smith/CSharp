@@ -1,6 +1,8 @@
+using HelloWorld.E3Lib;
+
 namespace HelloWorld.E2Lib
 {
-    public class Car : IDriveable
+    public abstract class Car : IDriveable
     {
         public string Make { get; set; }
         public string Model { get; set; }
@@ -22,7 +24,7 @@ namespace HelloWorld.E2Lib
 
         public virtual void DisplayInfo()
         {
-            Console.WriteLine($"Car Make: {Make}, Model:{Model}, Year: {GetYear()}");
+            Console.WriteLine($"Car Make: {Make} | Model:{Model} | Year: {GetYear()}");
         }
 
         public Car(string make, string model, int year)
@@ -31,10 +33,12 @@ namespace HelloWorld.E2Lib
             Model = model;
             SetYear(year);
         }
-        
+
         public virtual void Drive()
         {
             Console.WriteLine($"Driving a {Make} {Model} from {GetYear()}.");
         }
+
+        public abstract void TopUp();
     }
 }

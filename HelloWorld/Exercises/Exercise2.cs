@@ -1,4 +1,5 @@
 using HelloWorld.E2Lib;
+using HelloWorld.E3Lib;
 
 namespace HelloWorld.Exercises
 {
@@ -8,7 +9,7 @@ namespace HelloWorld.Exercises
         {
             Console.WriteLine("This is Exercise 2!");
 
-            Car car = new Car("Toyota", "Corolla", 2020);
+            Car car = new GasCar("Toyota", "Corolla", 2020);
             car.DisplayInfo();
 
             ElectricCar eCar = new ElectricCar("Tesla", "Model 3", 2022, 75);
