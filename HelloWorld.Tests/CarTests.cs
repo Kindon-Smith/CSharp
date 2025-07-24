@@ -88,6 +88,7 @@ public class CarTests
             finally
             {
                 Console.SetOut(originalOut);
+                
             }
         }
     }
