@@ -25,6 +25,8 @@ namespace HelloWorld.Exercises
         {
             // Create a garage and populates it with random cars
             var garage = new Garage();
+            var garage2 = new Garage();
+
             for (int i = 0; i < 10; i++)
             {
                 garage.AddCar(CarFactory.createRandomCar());
@@ -100,6 +102,7 @@ namespace HelloWorld.Exercises
                 Console.WriteLine($"Cars matching model '{modelToFind}' in the garage:");
                 matchingCars.ForEach(car => car.DisplayInfo());
             }
+            
         }
     }
 }

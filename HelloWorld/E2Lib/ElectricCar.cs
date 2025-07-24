@@ -4,7 +4,12 @@ namespace HelloWorld.E2Lib
 {
     public class ElectricCar : Car, IChargeable
     {
-        public int BatteryCapacity { get; set; }
+        private int _batteryCapacity;
+        public int BatteryCapacity
+        {
+            get => _batteryCapacity;
+            set => _batteryCapacity = Math.Clamp(value, 1, 200);
+        }
         public int BatteryLevel { get; set; }
 
         public ElectricCar(string make, string model, int year, int batteryCapacity)

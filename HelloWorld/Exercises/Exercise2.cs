@@ -3,6 +3,17 @@ using HelloWorld.E3Lib;
 
 namespace HelloWorld.Exercises
 {
+    /// <summary>
+    /// Exercise 2 demonstrates fundamental OOP concepts in C#,
+    /// including classes, inheritance, interfaces, and polymorphism.
+    /// 
+    /// Features:
+    /// - Uses abstract classes (Shape, Car, Animal) and inheritance (Circle, Square, GasCar, ElectricCar, Dog, Cat)
+    /// - Implements and demonstrates interfaces (IDriveable)
+    /// - Shows polymorphism with method overriding and base class references
+    /// - Demonstrates encapsulation and composition with a Garage class
+    /// - Provides example usage and output for each concept
+    /// </summary>
     public static class Exercise2
     {
         public static void Run()
