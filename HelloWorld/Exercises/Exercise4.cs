@@ -88,9 +88,11 @@ public class Exercise4
         }
 
         Dictionary<char, int> charCounts = new Dictionary<char, int>();
-        foreach (char letter in input) {
+        
+        foreach (char letter in input)
+        {
             var standardLetter = char.ToLower(letter);
-            if (charCounts.ContainsKey(char.ToLower(standardLetter)))
+            if (charCounts.ContainsKey(standardLetter))
             {
                 charCounts[standardLetter] += 1;
             }
