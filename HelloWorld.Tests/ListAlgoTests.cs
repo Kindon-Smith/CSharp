@@ -17,7 +17,7 @@ public class ListAlgoTests
     [Fact]
     public void FindMax_ThrowsErrorWithNullInput()
     {
-        Assert.Throws<ArgumentException>(() => Exercise4.FindMax((int[])null));
+        Assert.Throws<ArgumentNullException>(() => Exercise4.FindMax((int[])null));
     }
 
     [Theory]
