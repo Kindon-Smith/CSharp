@@ -1,3 +1,5 @@
+using System.Dynamic;
+using System.Reflection.PortableExecutable;
 using System.Text;
 
 namespace HelloWorld.Exercises;
@@ -13,11 +15,11 @@ public class Exercise4
     {
         if (numbers is null)
         {
-            throw new ArgumentNullException("Input array cannot be null.");
+            throw new ArgumentNullException(nameof(numbers),"Input array cannot be null.");
         }
         if (numbers.Length == 0)
         {
-            throw new ArgumentNullException("Input array cannot be empty.");
+            throw new ArgumentNullException("Input array cannot be empty.", nameof(numbers));
         }
         if (numbers.Length == 1)
         {
@@ -36,7 +38,7 @@ public class Exercise4
     {
         if (input is null)
         {
-            throw new ArgumentNullException("Input string cannot be null.");
+            throw new ArgumentNullException(nameof(input),"Input string cannot be null.");
         }
         if (input.Length == 0 || input.Length == 1)
         {
@@ -51,12 +53,75 @@ public class Exercise4
         return reversed.ToString();
     }
 
+    public static int CountVowels(string input)
+    {
+        if (input is null)
+        {
+            throw new ArgumentNullException(nameof(input), "Input string cannot be null.");
+        }
+
+        int vowelCount = 0;
+        foreach (char letter in input) {
+            if (Vowels.Contains(char.ToLower(letter)))
+            {
+                vowelCount++;
+            }
+        }
+        return vowelCount;
+    }
+    private static readonly HashSet<char> Vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
+
+
+    public static char FirstNonRepeatingChar(string input)
+    {
+        if (input is null)
+        {
+            throw new ArgumentNullException(nameof(input), "Input string cannot be null.");
+        }
+        if (input.Length == 0)
+        {
+            throw new ArgumentException("Input string must contain characters.", nameof(input));
+        }
+        if (input.Length == 1)
+        {
+            return input[0];
+        }
+
+        Dictionary<char, int> charCounts = new Dictionary<char, int>();
+        foreach (char letter in input) {
+            var standardLetter = char.ToLower(letter);
+            if (charCounts.ContainsKey(char.ToLower(standardLetter)))
+            {
+                charCounts[standardLetter] += 1;
+            }
+            else
+            {
+                charCounts[standardLetter] = 1;
+            }
+        }
+        foreach (char letter in input)
+        {
+            var standardLetter = char.ToLower(letter);
+            if (charCounts[standardLetter] == 1)
+            {
+                return standardLetter;
+            }
+        }
+        return '\0';
+    }
     public static void Run()
     {
-        string catDog = "catDog";
+        /*string catDog = "catDog";
         var reversedCatDog = ReverseString(catDog);
-        Console.WriteLine(reversedCatDog);
+        /*Console.WriteLine(reversedCatDog);
         Console.WriteLine(ReverseString(""));
         Console.WriteLine(ReverseString("1"));
+
+        Console.WriteLine(CountVowels("Hello"));
+        Console.WriteLine(CountVowels("Potatosandwichupinmygums"));*/
+
+        Console.WriteLine(FirstNonRepeatingChar("Hello"));
+        Console.WriteLine(FirstNonRepeatingChar("Hhohh"));
+
     }
 }
