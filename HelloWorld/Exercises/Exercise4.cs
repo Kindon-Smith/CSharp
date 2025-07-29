@@ -157,6 +157,40 @@ public class Exercise4
         }
         return letterCounts.Values.All(count => count == 0);
     }
+
+    public static int LengthOfLongestSubstring(string input)
+    {
+        if (input is null)
+        {
+            throw new ArgumentNullException(nameof(input), "Input string cannot be null.");
+        }
+        if (input.Length == 1)
+        {
+            return 1;
+        }
+
+        int left = 0;
+        HashSet<char> windowStringSet = new HashSet<char>();
+        int max = 0;
+
+        for (int right = 0; right < input.Length; right++)
+        {
+            if (windowStringSet.Contains(input[right]))
+            {
+                while (input[left] != input[right])
+                {
+                    windowStringSet.Remove(input[left]);
+                    left++;
+                }
+            }
+            else
+            {
+                windowStringSet.Add(input[right]);
+            }
+            max = Math.Max(max, right - left + 1);
+        }
+        return max;
+    }
     public static void Run()
     {
         /*string catDog = "catDog";
@@ -169,7 +203,7 @@ public class Exercise4
         Console.WriteLine(CountVowels("Potatosandwichupinmygums"));
 
         Console.WriteLine(FirstNonRepeatingChar("Hello"));
-        Console.WriteLine(FirstNonRepeatingChar("Hhohh"));*/
+        Console.WriteLine(FirstNonRepeatingChar("Hhohh"));
 
         Console.WriteLine(AnagramCheck("aba", "baa").ToString());
         Console.WriteLine(AnagramCheck("aab", "baa").ToString());
@@ -177,6 +211,15 @@ public class Exercise4
         Console.WriteLine(AnagramCheck("ab", "baa").ToString());
         Console.WriteLine(AnagramCheck("asdfasdvzxcv", "baafba").ToString());
         Console.WriteLine(AnagramCheck("1", "2").ToString());
-        //Console.WriteLine(AnagramCheck("aba", null).ToString());
+        //Console.WriteLine(AnagramCheck("aba", null).ToString());*/
+
+        Console.WriteLine(LengthOfLongestSubstring("aaaa"));
+        Console.WriteLine(LengthOfLongestSubstring("bbaab"));
+        Console.WriteLine(LengthOfLongestSubstring("afgxcvbxvcbmncvbnaer"));
+        Console.WriteLine(LengthOfLongestSubstring("abfvxcbkmhfjasdD"));
+        Console.WriteLine(LengthOfLongestSubstring("aA"));
+        Console.WriteLine(LengthOfLongestSubstring("123"));
+
+
     }
 }
