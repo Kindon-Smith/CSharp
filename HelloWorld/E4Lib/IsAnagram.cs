@@ -2,6 +2,19 @@ namespace HelloWorld.E4Lib;
 
 public static class AnagramCheck
 {
+    /// <summary>
+    /// Checks if two strings are anagrams of each other without sorting.
+    /// An anagram is a word or phrase formed by rearranging the letters of a different
+    /// word or phrase, typically using all the original letters exactly once.
+    /// If the input strings are null, an ArgumentNullException is thrown.
+    /// Time Complexity: O(n), where n is the length of the input strings. Program ensures
+    /// sizes match before proceeding with character counting.
+    /// Space Complexity: O(1), as it uses a dictionary capped to the number of unique characters (e.g., 256 for ASCII).
+    /// </summary>
+    /// <param name="input1">String to be compared</param>
+    /// <param name="input2">Second string to be compared.</param>
+    /// <returns>True or False</returns>
+    /// <exception cref="ArgumentNullException">Thrown when either input is null.</exception>
     public static bool Execute(string input1, string input2)
     {
         if (input1 is null || input2 is null)

@@ -1,7 +1,17 @@
 namespace HelloWorld.E4Lib;
 
 public static class FirstNonRepeatingChar
-{
+{   
+    /// <summary>
+    /// Finds the first non-repeating character in a given string.
+    /// The method uses a dictionary to count occurrences of each character.
+    /// Time Complexity: O(n), where n is the length of the input string.
+    /// Space Complexity: O(1), as it uses a dictionary capped to the number of unique characters (e.g., 256 for ASCII).
+    /// </summary>
+    /// <param name="input">String to check for non-repeating characters.</param>
+    /// <returns>The first non-repeating character or '\0' if none found.</returns>
+    /// <exception cref="ArgumentNullException">Thrown when input is null.</exception>
+    /// <exception cref="ArgumentException">Thrown when input is empty.</exception>
     public static char Execute(string input)
     {
         if (input is null)

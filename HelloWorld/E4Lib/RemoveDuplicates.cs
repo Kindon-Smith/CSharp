@@ -12,10 +12,11 @@ public static class RemoveDuplicates
     /// The method modifies the input array to contain only unique elements at the beginning.
     /// The remaining elements in the array are not guaranteed to be in any specific order.
     /// The method does not return a new array, but modifies the original array.
-    /// Runtime: O(n), where n is the length of the input array.
+    /// Time Complexity: O(n), where n is the length of the input array.
     /// Space Complexity: O(1), as it uses a constant amount of extra space.
     /// </summary>
     /// <param name="numbers">The sorted array to remove duplicates from.</param>
+    /// <returns>void</returns>
     /// <exception cref="ArgumentNullException">Thrown when numbers is null</exception>
     public static void Execute(int[] numbers)
     {
