@@ -29,5 +29,10 @@ public class Exercise4
 
         Console.WriteLine($"{nameof(LengthOfLongestSubstring)}: Longest Substring of string: abcabcbb: {LengthOfLongestSubstring.Execute("abcabcbb")}");
         Console.WriteLine($"{nameof(LengthOfLongestSubstring)}: Longest Substring of string: bbabcb: {LengthOfLongestSubstring.Execute("bbcb")}");
+
+        Console.WriteLine($"{nameof(RemoveDuplicates)}: Removing duplicates from array: [ 1, 2, 2, 3, 4, 4, 5 ]");
+        int[] numbers = new int[] { 1, 2, 2, 3, 4, 4, 5 };
+        RemoveDuplicates.Execute(numbers); 
+        Console.WriteLine($"{nameof(RemoveDuplicates)}: Result: [ {string.Join(", ", numbers)} ]");
     }
 }
