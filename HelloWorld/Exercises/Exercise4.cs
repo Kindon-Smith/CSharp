@@ -1,7 +1,7 @@
 using System.Dynamic;
 using System.Reflection.PortableExecutable;
 using System.Text;
-
+using System.Text.RegularExpressions;
 using HelloWorld.E4Lib;
 
 namespace HelloWorld.Exercises;
@@ -32,7 +32,16 @@ public class Exercise4
 
         Console.WriteLine($"{nameof(RemoveDuplicates)}: Removing duplicates from array: [ 1, 2, 2, 3, 4, 4, 5 ]");
         int[] numbers = new int[] { 1, 2, 2, 3, 4, 4, 5 };
-        RemoveDuplicates.Execute(numbers); 
+        RemoveDuplicates.Execute(numbers);
         Console.WriteLine($"{nameof(RemoveDuplicates)}: Result: [ {string.Join(", ", numbers)} ]");
+
+        Console.WriteLine($"{nameof(GroupAnagrams)}: Grouping anagrams from list: [ 'eat', 'tea', 'tan', 'ate', 'nat', 'bat' ]");
+        var anagrams = GroupAnagrams.Execute(new List<string> { "eat", "tea", "tan", "ate", "nat", "bat" });
+        Console.WriteLine($"{nameof(GroupAnagrams)} result: ");
+        foreach (var group in anagrams) 
+        {
+            Console.WriteLine($"Group: [ {string.Join(", ", group)} ]");
+        }
+
     }
 }
