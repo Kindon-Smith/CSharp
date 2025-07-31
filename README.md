@@ -46,6 +46,8 @@ int vowels = CountVowels.Execute("interview");
 - Anagram Check
 - Length of Longest Substring Without Repeats
 - Remove Duplicates from Sorted Array
+- Length of Longest Palindromic Substring
+- Group Anagrams
 
 ## Contributing
 
