@@ -2,13 +2,14 @@ using Xunit;
 using HelloWorld.Exercises;
 using HelloWorld.E4Lib;
 
+namespace AlgorithmTests;
 public class ListAlgoTests
 {
     /// <summary>
     /// Deprecated, temporarily not working due to changes in the E4Lib namespace
     /// </summary>
     /// <param name=""></param>
-    
+
     /*
     [Theory]
     [Trait("Category", "ListTest")]

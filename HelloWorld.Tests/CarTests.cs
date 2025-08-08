@@ -2,6 +2,7 @@
 using HelloWorld.E2Lib;
 using HelloWorld.E3Lib;
 
+namespace VehicleTests;
 public class CarTests
 {
 
@@ -88,11 +89,11 @@ public class CarTests
             finally
             {
                 Console.SetOut(originalOut);
-                
-                
+
+
             }
         }
     }
 
-    
+
 }
