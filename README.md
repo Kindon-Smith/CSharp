@@ -1,3 +1,25 @@
+# CSharp
+
+Solutions and exercises in C#/.NET 9
+
+Projects
+- HelloWorld (console app)
+- HelloWorld.Tests (xUnit)
+
+Build and test
+```bash
+dotnet restore
+dotnet build
+dotnet test HelloWorld.sln
+```
+
+Highlights
+- OOP examples (inheritance, interfaces, factory)
+- Algorithms (strings, arrays, hash maps)
+
+Next
+- Split libraries into class libraries under src/, add CI, improve test coverage.
+
 # CSharp Algorithms & Interview Prep
 
 This repository contains clean, well-documented C# solutions to classic algorithm and data structure problems.  

@@ -2,7 +2,7 @@
 using HelloWorld.E2Lib;
 using HelloWorld.E3Lib;
 
-namespace VehicleTests;
+namespace HelloWorld.Tests;
 public class CarTests
 {
 

@@ -2,7 +2,7 @@ using Xunit;
 using HelloWorld.Exercises;
 using HelloWorld.E4Lib;
 
-namespace AlgorithmTests;
+namespace HelloWorld.Tests;
 public class ListAlgoTests
 {
     /// <summary>
