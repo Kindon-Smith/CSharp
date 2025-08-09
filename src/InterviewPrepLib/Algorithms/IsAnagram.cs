@@ -15,7 +15,7 @@ public static class AnagramCheck
     /// <param name="input2">Second string to be compared.</param>
     /// <returns>True or False</returns>
     /// <exception cref="ArgumentNullException">Thrown when either input is null.</exception>
-    public static bool Execute(string input1, string input2)
+    public static bool Execute(string? input1, string? input2)
     {
         if (input1 is null || input2 is null)
         {

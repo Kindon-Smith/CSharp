@@ -15,9 +15,15 @@ public class ReverseStringTests
     }
 
     [Fact]
-    public void ReverseStringHandlesEmptyString()
+    public void ReverseString_Handles_Empty_String()
     {
         Assert.Equal("", ReverseString.Execute(""));
+    }
+
+    [Fact]
+    public void ReverseString_Handles_Null_String()
+    {
+        Assert.Throws<ArgumentNullException>(() => ReverseString.Execute(null));
     }
 }
 

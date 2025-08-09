@@ -16,7 +16,7 @@ public static class ReverseString
     /// <param name="input">The input string to reverse.</param>
     /// <returns>The reversed string.</returns>
     /// <exception cref="ArgumentNullException">Thrown when input is null.</exception>
-    public static string Execute(string input)
+    public static string Execute(string? input)
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input), "Input string cannot be null.");
