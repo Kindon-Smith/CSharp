@@ -1,7 +1,7 @@
 ﻿using Xunit;
 using InterviewPrepLib.DataStructures;
 
-namespace HelloWorld.Tests;
+namespace Datastructures.Tests;
 public class CarTests
 {
 

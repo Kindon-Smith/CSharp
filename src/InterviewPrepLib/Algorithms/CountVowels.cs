@@ -13,7 +13,7 @@ public static class CountVowels
     /// <exception cref="ArgumentNullException">Thrown when input is null.</exception>
     private static readonly HashSet<char> Vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
 
-    public static int Execute(string input)
+    public static int Execute(string? input)
     {
         if (input is null)
             throw new ArgumentNullException(nameof(input), "Input string cannot be null.");
