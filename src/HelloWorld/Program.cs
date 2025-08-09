@@ -2,6 +2,8 @@
 using System.Reflection;
 using HelloWorld.Exercises;
 using System.Linq;
+using InterviewPrepLib.DataStructures;
+using InterviewPrepLib.Algorithms;
 
 namespace HelloWorld;
 
