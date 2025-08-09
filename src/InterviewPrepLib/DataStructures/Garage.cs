@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace HelloWorld.E2Lib
+namespace InterviewPrepLib.DataStructures
 {
     public class Garage
     {

@@ -2,7 +2,7 @@
 
 using System.Globalization;
 
-namespace HelloWorld.E4Lib;
+namespace InterviewPrepLib.Algorithms;
 
 
 public static class RemoveDuplicates

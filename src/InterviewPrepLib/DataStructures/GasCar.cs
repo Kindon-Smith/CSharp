@@ -1,6 +1,6 @@
-using HelloWorld.E2Lib;
+using InterviewPrepLib.DataStructures;
 
-namespace HelloWorld.E3Lib
+namespace InterviewPrepLib.DataStructures
 {
     public class GasCar : Car, IDriveable, IRefuelable
     {

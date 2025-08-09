@@ -1,7 +1,6 @@
-using HelloWorld.E3Lib;
-using HelloWorld.E2Lib;
+using InterviewPrepLib.DataStructures;
 
-namespace HelloWorld.E3Lib
+namespace InterviewPrepLib.DataStructures
 {
     public class CarFactory
     {

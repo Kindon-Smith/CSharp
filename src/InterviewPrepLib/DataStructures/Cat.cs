@@ -1,4 +1,4 @@
-namespace HelloWorld.E2Lib
+namespace InterviewPrepLib.DataStructures
 {
     public class Cat : Animal
     {

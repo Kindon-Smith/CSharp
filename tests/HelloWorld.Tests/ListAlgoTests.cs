@@ -1,6 +1,5 @@
 using Xunit;
-using HelloWorld.Exercises;
-using HelloWorld.E4Lib;
+using InterviewPrepLib.Algorithms;
 
 namespace HelloWorld.Tests;
 public class ListAlgoTests

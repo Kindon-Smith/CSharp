@@ -1,6 +1,6 @@
-using HelloWorld.E3Lib;
+using InterviewPrepLib.DataStructures;
 
-namespace HelloWorld.E2Lib
+namespace InterviewPrepLib.DataStructures
 {
     public abstract class Car : IDriveable
     {

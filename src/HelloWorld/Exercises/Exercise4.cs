@@ -2,7 +2,8 @@ using System.Dynamic;
 using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Text.RegularExpressions;
-using HelloWorld.E4Lib;
+using InterviewPrepLib.Algorithms;
+using InterviewPrepLib.DataStructures;
 
 namespace HelloWorld.Exercises;
 

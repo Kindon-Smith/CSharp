@@ -1,4 +1,4 @@
-namespace HelloWorld.E3Lib
+namespace InterviewPrepLib.DataStructures
 {
     public interface IRefuelable
     {

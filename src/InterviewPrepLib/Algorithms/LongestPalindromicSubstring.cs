@@ -1,4 +1,4 @@
-namespace HelloWorld.E4Lib;
+namespace InterviewPrepLib.Algorithms;
 
 public class LongestPalindromicSubstring {
 

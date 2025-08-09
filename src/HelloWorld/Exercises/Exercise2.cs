@@ -1,5 +1,5 @@
-using HelloWorld.E2Lib;
-using HelloWorld.E3Lib;
+using InterviewPrepLib.Algorithms;
+using InterviewPrepLib.DataStructures;
 
 namespace HelloWorld.Exercises
 {
@@ -49,7 +49,7 @@ namespace HelloWorld.Exercises
         }
     }
 
-    
 
-    
+
+
 }

@@ -1,8 +1,7 @@
 namespace HelloWorld.Exercises;
 
-using HelloWorld.E2Lib;
-using HelloWorld.E3Lib;
-using HelloWorld.E4Lib;
+using InterviewPrepLib.Algorithms;
+using InterviewPrepLib.DataStructures;
 
 public class Exercise5
 {
